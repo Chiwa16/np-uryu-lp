@@ -327,15 +327,8 @@
 
     <figure class="mt-6 rounded-2xl overflow-hidden">
       <picture>
-        <!-- WebP優先 -->
-        <source type="image/webp"
-          srcset="
-            ./assets/images/uryu-hero-800.webp   800w,
-            ./assets/images/uryu-hero-1200.webp 1200w,
-            ./assets/images/uryu-hero-1600.webp 1600w,
-            ./assets/images/uryu-hero-2240.webp 2240w
-          ">
-        <!-- JPEGフォールバック -->
+        <source type="image/jpeg" media="(min-width:1024px)" srcset="assets/images/uryu-hero-2240.jpg">
+        <source type="image/jpeg" media="(min-width:640px)"  srcset="assets/images/uryu-hero-1600.jpg">
         <img
           src="./assets/images/uryu-hero-1200.jpg"
           srcset="
